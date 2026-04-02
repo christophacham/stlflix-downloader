@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:platform.stlflix.com)",
+      "Skill(update-config)",
+      "Bash(pip install:*)",
+      "Bash(python -m pip install -r requirements.txt -q)",
+      "Bash(py --version)",
+      "Bash(python3.exe --version)",
+      "Read(//usr/**)",
+      "Read(//c/Windows/**)",
+      "Read(//c/Users/Kevin/AppData/Local/Programs/**)",
+      "Bash(docker:*)",
+      "Bash(echo \"Download started in background \\(PID $!\\). Check stlflix.log for progress.\")",
+      "Bash(gh auth:*)",
+      "Bash(gh repo:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git rm:*)",
+      "Bash(git reset:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git checkout-index:*)",
+      "Bash(git symbolic-ref:*)",
+      "Bash(git rebase:*)",
+      "Bash(git filter-branch:*)",
+      "Bash(git stash:*)",
+      "Bash(git checkout:*)"
+    ]
+  }
+}

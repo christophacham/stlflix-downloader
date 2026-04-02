@@ -1,0 +1,4 @@
+{
+  "jwt": "your_jwt_token_here",
+  "exp": 1234567890
+}

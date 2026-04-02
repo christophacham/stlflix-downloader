@@ -1,0 +1,13 @@
+services:
+  stlflix-downloader:
+    build: .
+    image: stlflix-downloader
+    environment:
+      - DOWNLOAD_DIR=/downloads
+      - STLFLIX_EMAIL=your@email.com
+      - STLFLIX_PASSWORD=yourpassword    # use $$ for a literal $ in the password
+    volumes:
+      - ./.jwt_cache.json:/app/.jwt_cache.json
+      - <YOUR_DOWNLOAD_DIR>:/downloads
+    # Dry-run:  docker compose run --rm stlflix-downloader --dry-run
+    # Sync:     docker compose run --rm stlflix-downloader
